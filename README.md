@@ -2,8 +2,7 @@
 
 #Intro 
 
-Hi, It's Hardy, with my new project
-let me know if what you think of this app
+Hi, It's Hardy.
 
 #AppDescription-id
 Cinelog dibuat dengan tujuan untuk memenuhi tugas submisi dalam rangka memperoleh gelar Android Developer Expert. Cinelog sendiri adalah sebuah aplikasi android yang akan menampilkan katalog film.
