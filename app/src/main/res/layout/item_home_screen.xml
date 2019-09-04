@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="10dp"
+    android:layout_gravity="center"
+    android:layout_marginBottom="1dp"
+    android:layout_marginTop="4dp"
+    android:layout_marginRight="4dp"
+    android:layout_marginLeft="4dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imgPoster"
+            android:layout_width="100dp"
+            android:layout_height="150dp"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="1dp"
+            android:adjustViewBounds="true"
+            android:outlineAmbientShadowColor="@android:color/holo_red_dark"
+            android:padding="5dp"
+            android:scaleType="centerCrop"
+            tools:src="@android:color/darker_gray"
+            android:contentDescription="TODO" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/imgPoster"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:textColor="@android:color/white"
+                    android:id="@+id/tv_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:text="How to Train Your Dragon: The Hidden World"
+                    tools:textSize="17sp"/>
+
+                <!--<TextView-->
+                    <!--android:layout_marginLeft="6dp"-->
+                    <!--android:layout_toRightOf="@id/tv_title"-->
+                    <!--android:id="@+id/tv_year"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--tools:text="(tahun)"-->
+                    <!--android:textColor="@color/grayLight"-->
+                    <!--tools:textSize="17sp"/>-->
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/star"
+                    android:textColor="@color/grayLight"
+                    android:layout_marginRight="5dp"
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_star_black_24dp"/>
+
+                <TextView
+                    android:textStyle="bold"
+                    android:layout_toRightOf="@id/rating"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/slash"
+                    android:text="@string/slash"
+                    android:textColor="@color/grayLight"
+                    android:textSize="16sp"
+                    android:layout_marginTop="5dp"
+                    android:padding="1dp"/>
+
+                <TextView
+                    android:layout_toRightOf="@id/star"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/rating"
+                    android:text="@string/rating"
+                    android:textColor="@android:color/black"
+                    android:textSize="12sp"
+                    android:layout_marginTop="5dp"
+                    android:padding="1dp"/>
+
+                <TextView
+                    android:layout_toRightOf="@id/slash"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Of_10"
+                    android:textColor="@color/grayLight"
+                    android:textSize="10sp"
+                    android:layout_marginTop="5dp"
+                    android:padding="1dp"/>
+            </RelativeLayout>
+
+
+            <TextView
+                android:id="@+id/tv_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:textSize="12sp"
+                android:textColor="@android:color/darker_gray"
+                android:layout_marginTop="5dp"
+                android:maxLines="3"
+                tools:text="Tentang" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <Button
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:textStyle="bold"
+                    android:background="@color/yellow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:text="Favorite"
+                    android:textSize="10sp"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:id="@+id/btn_favorite"/>
+
+                <Button
+                    android:focusable="false"
+                    android:clickable="false"
+                    android:id="@+id/btn_WatchList"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:textStyle="bold"
+                    android:layout_gravity="center_vertical"
+                    android:paddingTop="5dp"
+                    android:paddingLeft="3dp"
+                    android:drawableTop="@drawable/ic_playlist_add_black_24dp"
+                    android:background="@color/yellow"
+                    android:layout_width="40dp"
+                    android:layout_height="30dp"
+                    style="@style/Widget.AppCompat.Button.Colored"/>
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>
