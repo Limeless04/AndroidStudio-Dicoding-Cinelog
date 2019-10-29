@@ -1,8 +1,5 @@
 package com.example.moviecatalogueapp.Activity;
 
-import androidx.appcompat.app.AppCompatActivity;
-
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
@@ -11,35 +8,41 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import androidx.appcompat.app.AppCompatActivity;
+
 import com.example.moviecatalogueapp.MoviesModel.Movies;
 import com.example.moviecatalogueapp.R;
 import com.pierfrancescosoffritti.androidyoutubeplayer.core.player.YouTubePlayer;
 import com.pierfrancescosoffritti.androidyoutubeplayer.core.player.listeners.AbstractYouTubePlayerListener;
 import com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView;
 
-public class DetailMovieActivity extends AppCompatActivity implements View.OnClickListener {
-
-    TextView  title, year, description, rating, director, writer, genre, playtime;
+public class DetailTvShowsActivity extends AppCompatActivity implements View.OnClickListener {
+    TextView tv1, tv2, title, year, description, rating, creator, stars, genre, playtime;
     ImageView poster;
     Button btnFavorite, btnPlaylist;
     Movies movies;
-    public static final String EXTRA_MOVIES = "EXTRA_MOVIES";
+    public static final String EXTRA_MOVIES="EXTRA_MOVIES";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_detail_movie);
+        setContentView(R.layout.activity_detail_tv_show);
         backButton();
 
         movies = getIntent().getParcelableExtra("EXTRA_MOVIES");
+
+        tv1 = findViewById(R.id.tv_1);
+        tv1.setText(R.string.creator);
+        tv2 = findViewById(R.id.tv_2);
+        tv2.setText(R.string.stars);
 
         title = findViewById(R.id.title);
         year = findViewById(R.id.year);
         description = findViewById(R.id.tv_description);
         poster = findViewById(R.id.imgPoster);
         rating = findViewById(R.id.rating);
-        director = findViewById(R.id.tv_value_1);
-        writer = findViewById(R.id.tv_value_2);
+        creator = findViewById(R.id.tv_value_1);
+        stars = findViewById(R.id.tv_value_2);
         playtime = findViewById(R.id.tv_playtime);
         genre = findViewById(R.id.tv_genre);
         btnFavorite = findViewById(R.id.btn_favorite);
@@ -67,12 +70,10 @@ public class DetailMovieActivity extends AppCompatActivity implements View.OnCli
         year.setText(movies.getYear());
         description.setText(movies.getDescription());
         poster.setImageResource(movies.getPhoto());
-        director.setText(movies.getDirector());
-        writer.setText(movies.getWriter());
+        creator.setText(movies.getDirector());
+        stars.setText(movies.getWriter());
         playtime.setText(movies.getPlaytime());
         genre.setText(movies.getGenre());
-
-
     }
 
     @Override

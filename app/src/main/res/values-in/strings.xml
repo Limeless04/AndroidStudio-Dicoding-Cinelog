@@ -1,0 +1,294 @@
+<resources>
+    <string name="added_to_favorite"> Ditambahkan ke Favorit</string>
+    <string name="added_to_watchlist"> Ditambahkan ke Watchlist</string>
+    <string name="movies">Movies</string>
+    <string name="tv_shows">TV</string>
+    <string name="app_name">Cinelog</string>
+    <string name="rating">Rating</string>
+    <string name="Of_10">10</string>
+    <string name="slash">/</string>
+    <string name="sample_title">Aquaman</string>
+    <string name="sample_description">Seorang musisi membantu seorang penyanyi muda mendapatkan ketenaran, usia dan candunya akan alkohol membuat kariernya menurun.</string>
+    <string name="sample_year">2018</string>
+    <string name="sample_genre">Aksi, Petualangan, Fantasi</string>
+    <string name="sample_playtime">2j 23men</string>
+    <string name="favorit_button">Favorit</string>
+    <string name="director">Sutradara</string>
+    <string name="writer">Penulis</string>
+    <string name="favorite">Favorit</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="stars">Pemeran</string>
+    <string name="creator">Kreator</string>
+    <string name="language">Bahasa</string>
+
+    <string-array name="data_title">
+    <item>A Star Is Born</item>
+    <item>Aquaman</item>
+    <item>Avengers : Invinity War</item>
+    <item>Bumblebee</item>
+    <item>Once Upon a Deadpool</item>
+    <item>How to Train Your Dragon : The Hidden World</item>
+    <item>Marry Poppins Returns</item>
+    <item>Robin Hood</item>
+    <item>Spider-man : Into the Spider-Verse</item>
+    <item>Venom</item>
+
+    </string-array>
+
+    <string-array name="year">
+        <item>(2018)</item>
+        <item>(2018)</item>
+        <item>(2018)</item>
+        <item>(2018)</item>
+        <item>(2018)</item>
+        <item>(2019)</item>
+        <item>(2018)</item>
+        <item>(2018)</item>
+        <item>(2018)</item>
+        <item>(2018)</item>
+    </string-array>
+
+    <string-array name="data_description">
+        <item>Seorang musisi membantu seorang penyanyi muda mendapatkan ketenaran, usia dan candunya akan alkohol membuat kariernya menurun.</item>
+        <item>Arthur Curry, pewaris tahta kerajaan Atlantis, berupaya untuk mencegah terjadinya perang antara dunia bawah laut dan manusia</item>
+        <item>The Avengers dan sekutu mereka harus rela mengorbankan semua dalam upaya untuk mengalahkan Thanos yang akan mengakhiri alam semesta.</item>
+        <item>Dalam pelarian pada tahun 1987, Bumblebee menemukan tempat perlindungan di tempat barang rongsokan di kota pantai kecil California. Pada puncak usia 18 dan berusaha menemukan tempatnya di dunia, Charlie Watson menemukan Bumblebee, penuh dengan bekas luka pertempuran dan rusak.</item>
+        <item>Tentara bayaran mutan bermulut kotor Wade Wilson (alias Deadpool), menyatukan tim sesama penjahat mutan untuk melindungi anak laki-laki dengan kemampuan supranatural dari cyborg penjelajah waktu yang brutal.</item>
+        <item>Saat Hiccup mengetahui bahwa Toothless adalah bukan Night&#8211;Fury terakhir, ia harus mencari "Hidden World", sebuah tempat rahasia para naga, sebelum Grimmel menemukannya terlebih dahulu.</item>
+        <item>Beberapa puluh tahun setelah kunjungan terakhirnya, si pengasuh ajaib datang untuk menolong Bank\'s bersaudara dan anak-anak Michael melewati masa sulit.</item>
+        <item>Seorang pejuang perang yang keras dan komandan Moornya melakukan pemberontakan yang berani melawan mahkota Inggris yang korup.</item>
+        <item>Teen Miles Morales menjadi Spider-Man dari realitasnya, berjalan beriringan bersama lima rekan dari dimensi lain untuk menghentikan ancaman bagi semua realitas.</item>
+        <item>Reporter yang gagal terikat pada entitas asing, salah satu dari banyak simbiot yang telah menginvasi Bumi. Tetapi makhluk itu menyukai Bumi dan memutuskan untuk melindunginya.</item>
+
+    </string-array>
+
+    <string-array name="data_v">
+        <item>@drawable/v_asib</item>
+        <item>@drawable/v_aquaman</item>
+
+        <item>@drawable/v_infinitywar</item>
+        <item>@drawable/v_bumblebee</item>
+        <item>@drawable/v_dp</item>
+        <item>@drawable/v_httyd</item>
+        <item>@drawable/v_mpr</item>
+        <item>@drawable/v_rb</item>
+        <item>@drawable/v_sm</item>
+        <item>@drawable/venom</item>
+    </string-array>
+
+    <string-array name="data_director">
+        <item>Bradley Cooper</item>
+        <item>James Wan</item>
+        <item>Anthony Ruso, Joe Ruso</item>
+        <item>Travis Knight</item>
+        <item>David Leitch</item>
+        <item>Dean DeBlois</item>
+        <item>Rob Marshall</item>
+        <item>Otto Bathurst</item>
+        <item>Bob Persichetti, Peter Ramsey </item>
+        <item>Ruben Fleischer</item>
+    </string-array>
+
+    <string-array name="data_writer">
+        <item>Eric Roth</item>
+        <item>David Leslie Johnson-McGoldrick, Will Beall</item>
+        <item>Christopher Markus, Stephen McFeely</item>
+        <item>Christina Hodson</item>
+        <item>Rhett Reese, Paul Wernick</item>
+        <item>Dean DeBlois, Cressida Cowell </item>
+        <item>P.L. Travers </item>
+        <item>Ben Chandler, David James Kelly</item>
+        <item>Phil Lord, Rodney Rothman</item>
+        <item>Jeff Pinkner, Scott Rosenberg</item>
+    </string-array>
+
+    <string-array name="data_genre">
+        <item>Drama, Musik, Romansa</item>
+        <item>Aksi, Petualangan, Fantasi</item>
+        <item>Aksi, Petualangan, Fiksi Ilmiah</item>
+        <item>Aksi, Petualangan, Fiksi Ilmiah</item>
+        <item>Aksi, Petualangan, komed</item>
+        <item>Aksi, Petualangan, Fantasi</item>
+        <item>Animasi, Aksi, Petualangan</item>
+        <item>Komedi, Keluarga, Thriller</item>
+        <item>Animasi, Aksi, Petualangan</item>
+        <item>Aksi, Fiksi Ilmiah, Thriller</item>
+    </string-array>
+
+    <string-array name="data_playtime">
+        <item>2j 16m</item>
+        <item>2j 13m</item>
+        <item>2j 29m</item>
+        <item>1j 54m</item>
+        <item>1j 59m</item>
+        <item>1j 44m</item>
+        <item>2j 10m</item>
+        <item>1j 56m</item>
+        <item>1j 57m</item>
+        <item>1j 52m</item>
+    </string-array>
+
+    <string-array name="data_photo">
+        <item>@drawable/poster_a_star</item>
+        <item>@drawable/poster_aquaman</item>
+        <item>@drawable/poster_avengerinfinity</item>
+        <item>@drawable/poster_bumblebee</item>
+        <item>@drawable/poster_deadpool</item>
+        <item>@drawable/poster_dragon</item>
+        <item>@drawable/poster_marrypopins</item>
+        <item>@drawable/poster_robinhood</item>
+        <item>@drawable/poster_spiderman</item>
+        <item>@drawable/poster_venom</item>
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string-array name="data_rating">
+        <item>7.7</item>
+        <item>7.0</item>
+        <item>8.5</item>
+        <item>6.8</item>
+        <item>7.7</item>
+        <item>7.5</item>
+        <item>6.8</item>
+        <item>5.3</item>
+        <item>8.4</item>
+        <item>6.7</item>
+    </string-array>
+
+    <string-array name="data_title_tv">
+        <item>Avatar: The Last Airbender </item>
+        <item>Band of Brothers</item>
+        <item>Blue Planet II </item>
+        <item>Breaking Bad</item>
+        <item>Chernobyl </item>
+        <item>Death Note: Desu nôto</item>
+        <item>Game of Thrones </item>
+        <item>One Punch Man: Wanpanman </item>
+        <item>Planet Earth</item>
+        <item>Planet Earth II </item>
+    </string-array>
+
+    <string-array name="year_tv">
+        <item>(2005&#8211;2008)</item>
+        <item>(2001)</item>
+        <item>(2017&#8211;2018)</item>
+        <item>(2008&#8211;2013)</item>
+        <item>(2019)</item>
+        <item>(2011&#8211;2019)</item>
+        <item>(2006&#8211;2007)</item>
+        <item>(2015)</item>
+        <item>(2006)</item>
+        <item>(2016)</item>
+    </string-array>
+
+    <string-array name="data_description_tv">
+        <item>Dalam dunia yang hancur akibat perang, seorang anak lelaki bangkit untuk melakukan pencarian mistik yang berbahaya untuk memenuhi takdirnya sebagai Avatar, dan membawa kedamaian bagi dunia.</item>
+        <item>Sebuah kisah dari Angkatan Udara ke-101 Amerika Serikat, dan misi mereka pada perang dunia ke 2 Eropa, dari Operasi Overlord.</item>
+        <item>Attenborough kembali ke lautan dalam sekuel film terkenal tentang makhluk langka dan tidak biasa di kedalaman, serta mendokumentasikan masalah yang dihadapi lautan kita.</item>
+        <item>Seorang guru kimia SMA yang didiagnosis menderita kanker paru-paru yang tidak bisa disembuhkan, memutuskan untuk memproduksi dan menjual metamfetamin demi masa depan keluarganya.</item>
+        <item>Pada April 1986, sebuah ledakan di pembangkit listrik tenaga nuklir Chernobyl di Uni Republik Sosialis Soviet menjadi salah satu bencana terburuk di dunia.</item>
+        <item>Sembilan keluarga bangsawan berjuang untuk menguasai tanah mitos Westeros, sementara musuh kuno kembali setelah tidak aktif selama ribuan tahun.</item>
+        <item>Seorang siswa sekolah menengah yang cerdas melakukan perang rahasia untuk melenyapkan penjahat dari muka bumi setelah menemukan buku catatan yang mampu membunuh siapa pun yang namanya tertulis didalamnya.</item>
+        <item>Kisah dari Saitama, seorang yang menjalani perannya sebagai pah;awan demi kesenangan dan dapat menghancurkan musuhnya hanya dengan sekali pukul.</item>
+        <item>Pemenang Emmy Award, 11 episode, digarap selama 5 tahun, dokumenter alam termahal yang pernah diproduksi BBC, dan di filmkan pertama kali dalam resolusi HD</item>
+        <item>David Attenborough kembali dalam film dokumenter menakjubkan yang menampilkan kehidupan di Planet Bumi.</item>
+
+    </string-array>
+
+    <string-array name="data_photo_tv">
+        <item>@drawable/tv_avatar</item>
+        <item>@drawable/tv_bb</item>
+        <item>@drawable/tv_bob</item>
+        <item>@drawable/tv_bp2</item>
+        <item>@drawable/tv_chernobyl</item>
+        <item>@drawable/tv_deathn</item>
+        <item>@drawable/tv_got</item>
+        <item>@drawable/tv_opm</item>
+        <item>@drawable/tv_planet_earth_1</item>
+        <item>@drawable/tv_planer_earth</item>
+    </string-array>
+
+    <string-array name="data_stars">
+        <item>Dee Bradley Baker, Zach Tyler, Jack De Sena</item>
+        <item>Bryan Cranston, Aaron Paul, Anna Gunn</item>
+        <item>Scott Grimes, Damian Lewis, Ron Livingston</item>
+        <item>David Attenborough, Peter Drost, Roger Munns </item>
+        <item>Jessie Buckley, Jared Harris, Stellan Skarsgård </item>
+        <item>Mamoru Miyano, Brad Swaile, Vincent Tong</item>
+        <item>Emilia Clarke, Peter Dinklage, Kit Harington</item>
+        <item>Makoto Furukawa, Kaito Ishikawa, Hiromichi Tezuka</item>
+        <item>David Attenborough, Sigourney Weaver, Huw Cordey</item>
+        <item>David Attenborough</item>
+
+    </string-array>
+
+    <string-array name="data_creator">
+        <item>Michael Dante DiMartino, Bryan Konietzko</item>
+        <item>Vince Gilligan</item>
+        <item>-</item>
+        <item>-</item>
+        <item>Craig Mazin</item>
+        <item>-</item>
+        <item>David Benioff, D.B. Weiss</item>
+        <item>-</item>
+        <item>-</item>
+        <item>-</item>
+    </string-array>
+
+    <string-array name="data_genre_tv">
+        <item>Animasi, Aksi, Petualangan</item>
+        <item>Aksi, Drama, Sejarah</item>
+        <item>Dokumenter</item>
+        <item>Crime, Drama, Thriller</item>
+        <item>Drama, Sejarah, Thriller </item>
+        <item>Aksi, Petualangan, Drama </item>
+        <item>Animasi, Crime, Drama</item>
+        <item>Animasi, Aksi, Petualangan</item>
+        <item>Dokumenter</item>
+        <item>Dokumenter</item>
+    </string-array>
+
+    <string-array name="data_playtime_tv">
+        <item>23m</item>
+        <item>9j 54m </item>
+        <item>6j 4m</item>
+        <item>49m</item>
+        <item>5j 30m</item>
+        <item>57m</item>
+        <item>24m</item>
+        <item>24m</item>
+        <item>8j 58m</item>
+        <item>4j 58m</item>
+    </string-array>
+
+    <string-array name="data_v_tv">
+        <item>@drawable/tv_v_avatar</item>
+        <item>@drawable/tv_v_bb</item>
+        <item>@drawable/tv_v_bob</item>
+        <item>@drawable/tv_v_bp2</item>
+        <item>@drawable/tv_v_chernobyl</item>
+        <item>@drawable/tv_v_deathn</item>
+        <item>@drawable/tv_v_got</item>
+        <item>@drawable/tv_v_opm</item>
+        <item>@drawable/tv_v_planet_earth_1</item>
+        <item>@drawable/tv_v_planet_earth</item>
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string-array name="data_rating_tv">
+        <item>9.2</item>
+        <item>9.4</item>
+        <item>9.4</item>
+        <item>9.5</item>
+        <item>9.5</item>
+        <item>9.4</item>
+        <item>9.0</item>
+        <item>8.9</item>
+        <item>9.4</item>
+        <item>9.5</item>
+    </string-array>
+
+
+</resources>
+

@@ -1,83 +1,60 @@
 package com.example.moviecatalogueapp.Activity;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
-import android.content.res.TypedArray;
 import android.os.Bundle;
-import android.view.View;
-import android.widget.AdapterView;
-import android.widget.ListView;
+import android.provider.Settings;
+import android.view.Menu;
+import android.view.MenuItem;
 
-import com.example.moviecatalogueapp.Adapter.ListViewCatalogueAdapter;
-import com.example.moviecatalogueapp.MoviesModel.Movies;
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.viewpager.widget.ViewPager;
+
+import com.example.moviecatalogueapp.Adapter.ViewPagerAdapter;
+import com.example.moviecatalogueapp.Fragments.MoviesFragment;
 import com.example.moviecatalogueapp.R;
+import com.example.moviecatalogueapp.Fragments.TvShowsFragment;
+import com.google.android.material.tabs.TabLayout;
 
-import java.util.ArrayList;
-
-import static com.example.moviecatalogueapp.Activity.DetailMovieActivity.EXTRA_MOVIES;
-
-public class MainActivity extends AppCompatActivity implements AdapterView.OnItemClickListener {
-    private ArrayList<Movies> movies;
-    private String[] dataTitle, dataYear, dataRating, dataDescription, dataDirectore, dataWriter, dataGenre, dataPlaytime;
-    TypedArray dataPhoto, dataV;
-    ListViewCatalogueAdapter listViewCatalogueAdapter;
+public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        listViewCatalogueAdapter = new ListViewCatalogueAdapter(this);
-        ListView listView = findViewById(R.id.lv_home);
-        listView.setAdapter(listViewCatalogueAdapter);
+        ViewPager viewPager = findViewById(R.id.viewpager);
+        setupViewPager(viewPager);
 
-        prepare();
-        addItem();
+        TabLayout tabLayout = findViewById(R.id.tabs);
+        tabLayout.setupWithViewPager(viewPager);
 
-        listView.setOnItemClickListener(this);
+        tabLayout.getTabAt(0).setIcon(R.drawable.ic_movie_black_24dp);
+        tabLayout.getTabAt(1).setIcon(R.drawable.ic_tv_black_24dp);
+
     }
-
-        public void prepare () {
-            dataTitle = getResources().getStringArray(R.array.data_title);
-            dataYear = getResources().getStringArray(R.array.year);
-            dataRating = getResources().getStringArray(R.array.data_rating);
-            dataDescription = getResources().getStringArray(R.array.data_description);
-            dataPhoto = getResources().obtainTypedArray(R.array.data_photo);
-            dataV = getResources().obtainTypedArray(R.array.data_v);
-            dataDirectore = getResources().getStringArray(R.array.data_director);
-            dataWriter = getResources().getStringArray(R.array.data_writer);
-            dataGenre = getResources().getStringArray(R.array.data_genre);
-            dataPlaytime = getResources().getStringArray(R.array.data_playtime);
-
-        }
-
-        private void addItem () {
-            movies = new ArrayList<>();
-
-            for (int i = 0; i < dataTitle.length; i++) {
-                Movies movies = new Movies();
-                movies.setPhoto(dataPhoto.getResourceId(i, -1));
-                movies.setVideo(dataV.getResourceId(i, -1));
-                movies.setTitle(dataTitle[i]);
-                movies.setYear(dataYear[i]);
-                movies.setRating(dataRating[i]);
-                movies.setDirector(dataDirectore[i]);
-                movies.setWriter(dataWriter[i]);
-                movies.setGenre(dataGenre[i]);
-                movies.setDescription(dataDescription[i]);
-                movies.setPlaytime(dataPlaytime[i]);
-                this.movies.add(movies);
-            }
-            listViewCatalogueAdapter.setMovies(movies);
-        }
-
-
 
     @Override
-    public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-        Intent intent = new Intent(getBaseContext(), DetailMovieActivity.class);
-        intent.putExtra(EXTRA_MOVIES, movies.get(i));
-        startActivity(intent);
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        if (item.getItemId() == R.id.action_change_settings) {
+            Intent intent = new Intent(Settings.ACTION_LOCALE_SETTINGS);
+            startActivity(intent);
+        }
+        return super.onOptionsItemSelected(item);
     }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.menu, menu);
+        return super.onCreateOptionsMenu(menu);
+    }
+
+    private void setupViewPager(ViewPager viewPager) {
+        ViewPagerAdapter adapter = new ViewPagerAdapter(getSupportFragmentManager());
+        adapter.addFragment(new MoviesFragment(), getString(R.string.movies));
+        adapter.addFragment(new TvShowsFragment(), getString(R.string.tv_shows));
+        viewPager.setAdapter(adapter);
+    }
+
+
 }

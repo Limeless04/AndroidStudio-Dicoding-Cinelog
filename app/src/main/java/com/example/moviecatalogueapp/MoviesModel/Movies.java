@@ -12,11 +12,11 @@ public class Movies implements Parcelable {
         this.photo = photo;
     }
 
-    public int getVideo() {
+    public String getVideo() {
         return video;
     }
 
-    public void setVideo(int video) {
+    public void setVideo(String video) {
         this.video = video;
     }
 
@@ -84,7 +84,8 @@ public class Movies implements Parcelable {
         this.writer = writer;
     }
 
-    private int photo, video;
+    private int photo;
+    private String video;
     private String title;
     private String description;
     private String rating;
@@ -100,7 +101,7 @@ public class Movies implements Parcelable {
     @Override
     public void writeToParcel(Parcel dest, int flags) {
         dest.writeInt(this.photo);
-        dest.writeInt(this.video);
+        dest.writeString(this.video);
         dest.writeString(this.title);
         dest.writeString(this.description);
         dest.writeString(this.rating);
@@ -116,7 +117,7 @@ public class Movies implements Parcelable {
 
     private Movies(Parcel in) {
         this.photo = in.readInt();
-        this.video = in.readInt();
+        this.video = in.readString();
         this.title = in.readString();
         this.description = in.readString();
         this.rating = in.readString();

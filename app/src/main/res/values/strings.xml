@@ -1,4 +1,8 @@
 <resources>
+    <string name="added_to_favorite"> Added to Favorite</string>
+    <string name="added_to_watchlist"> Added to Watchlist</string>
+    <string name="movies">Movies</string>
+    <string name="tv_shows">TV Shows</string>
     <string name="app_name">Cinelog</string>
     <string name="rating">Rating</string>
     <string name="Of_10">10</string>
@@ -9,21 +13,53 @@
     <string name="sample_genre">Action, Adventure, Fantasy</string>
     <string name="sample_playtime">2h 23min</string>
     <string name="favorit_button">Favorite</string>
-    <string name="director">Director : </string>
-    <string name="writer">Writer : </string>
+    <string name="director">Director</string>
+    <string name="writer">Writer</string>
+    <string name="favorite">Favorite</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="stars">Stars</string>
+    <string name="creator">Creator</string>
+    <string name="language">Language</string>
 
     <string-array name="data_title">
-        <item>A Star Is Born</item>
-        <item>Aquaman</item>
-        <item>Avengers : Invinity War</item>
-        <item>Bumblebee</item>
-        <item>Once Upon a Deadpool</item>
-        <item>How to Train Your Dragon : The Hidden World</item>
-        <item>Marry Poppins Returns</item>
-        <item>Robin Hood</item>
-        <item>Spider-man : Into the Spider-Verse</item>
-        <item>Venom</item>
+    <item>A Star Is Born</item>
+    <item>Aquaman</item>
+    <item>Avengers : Invinity War</item>
+    <item>Bumblebee</item>
+    <item>Once Upon a Deadpool</item>
+    <item>How to Train Your Dragon : The Hidden World</item>
+    <item>Marry Poppins Returns</item>
+    <item>Robin Hood</item>
+    <item>Spider-man : Into the Spider-Verse</item>
+    <item>Venom</item>
 
+    </string-array>
+
+    <string-array name="data_video_link">
+        <item>nSbzyEJ8X9E</item>
+        <item>00QMS3Ldb20</item>
+        <item>6ZfuNTqbHE8</item>
+        <item>lcwmDAYt22k</item>
+        <item>PCf03KXyzIg</item>
+        <item>naW9U8MiUY0</item>
+        <item>-3jsfXDZLIY</item>
+        <item>zwPn9ZnbCo0</item>
+        <item>tg52up16eq0</item>
+        <item>xLCn88bfW1o</item>
+    </string-array>
+
+    <string-array name="data_video">
+        <item>d1EnW4kn1kg</item>
+        <item>1JLUn2DFW4w</item>
+        <item>zDBUooZQzgA</item>
+        <item>_38JDGnr0vA</item>
+        <item>s9APLXM9Ei8</item>
+        <item>nKGehVxS50A</item>
+        <item>rlR4PJn8b8I</item>
+        <item>78ngg0SRlEI</item>
+        <item>tiVNk6_0GdY</item>
+        <item>c8aFcHFu8QM</item>
     </string-array>
 
     <string-array name="year">
@@ -51,20 +87,6 @@
         <item>Teen Miles Morales becomes Spider-Man of his reality, crossing his path with five counterparts from other dimensions to stop a threat for all realities.</item>
         <item>A failed reporter is bonded to an alien entity, one of many symbiotes who have invaded Earth. But the being takes a liking to Earth and decides to protect it.</item>
 
-    </string-array>
-
-    <string-array name="data_v">
-        <item>@drawable/v_asib</item>
-        <item>@drawable/v_aquaman</item>
-
-        <item>@drawable/v_infinitywar</item>
-        <item>@drawable/v_bumblebee</item>
-        <item>@drawable/v_dp</item>
-        <item>@drawable/v_httyd</item>
-        <item>@drawable/v_mpr</item>
-        <item>@drawable/v_rb</item>
-        <item>@drawable/v_sm</item>
-        <item>@drawable/venom</item>
     </string-array>
 
     <string-array name="data_director">
@@ -132,6 +154,7 @@
         <item>@drawable/poster_venom</item>
     </string-array>
 
+    <!-- TODO: Remove or change this placeholder text -->
     <string-array name="data_rating">
         <item>7.7</item>
         <item>7.0</item>
@@ -144,5 +167,140 @@
         <item>8.4</item>
         <item>6.7</item>
     </string-array>
+
+    <string-array name="data_title_tv">
+        <item>Avatar: The Last Airbender </item>
+        <item>Breaking Bad</item>
+        <item>Band of Brothers</item>
+        <item>Blue Planet II </item>
+        <item>Chernobyl </item>
+        <item>Death Note: Desu nôto</item>
+        <item>Game of Thrones </item>
+        <item>One Punch Man: Wanpanman </item>
+        <item>Planet Earth</item>
+        <item>Planet Earth II </item>
+    </string-array>
+
+    <string-array name="year_tv">
+        <item>(2005&#8211;2008)</item>
+        <item>(2008&#8211;2013)</item>
+        <item>(2001)</item>
+        <item>(2017&#8211;2018)</item>
+        <item>(2019)</item>
+        <item>(2011&#8211;2019)</item>
+        <item>(2006&#8211;2007)</item>
+        <item>(2015)</item>
+        <item>(2006)</item>
+        <item>(2016)</item>
+    </string-array>
+
+    <string-array name="data_description_tv">
+        <item>In a war-torn world of elemental magic, a young boy reawakens to undertake a dangerous mystic quest to fulfill his destiny as the Avatar, and bring peace to the world.</item>
+        <item>A high school chemistry teacher diagnosed with inoperable lung cancer turns to manufacturing and selling methamphetamine in order to secure his family\'s future.</item>
+        <item>The story of Easy Company of the U.S. Army 101st Airborne Division, and their mission in World War II Europe, from Operation Overlord, through V&#8211;J Day.</item>
+        <item>Attenborough returns to the world\'s oceans in this sequel to the acclaimed documentary filming rare and unusual creatures of the deep, as well as documenting the problems our oceans face.</item>
+        <item>In April 1986, an explosion at the Chernobyl nuclear power plant in the Union of Soviet Socialist Republics becomes one of the world\'s worst man&#8211;made catastrophes.</item>
+        <item>Nine noble families fight for control over the mythical lands of Westeros, while an ancient enemy returns after being dormant for thousands of years.</item>
+        <item>An intelligent high school student goes on a secret crusade to eliminate criminals from the world after discovering a notebook capable of killing anyone whose name is written into it.</item>
+        <item>The story of Saitama, a hero that does it just for fun &amp; can defeat his enemies with a single punch.</item>
+        <item>Emmy Award&#8211;winning, 11 episodes, five years in the making, the most expensive nature documentary series ever commissioned by the BBC, and the first to be filmed in high definition.</item>
+        <item>David Attenborough returns in this breathtaking documentary showcasing life on Planet Earth.</item>
+
+    </string-array>
+
+    <string-array name="data_photo_tv">
+        <item>@drawable/tv_avatar</item>
+        <item>@drawable/tv_bb</item>
+        <item>@drawable/tv_bob</item>
+        <item>@drawable/tv_bp2</item>
+        <item>@drawable/tv_chernobyl</item>
+        <item>@drawable/tv_deathn</item>
+        <item>@drawable/tv_got</item>
+        <item>@drawable/tv_opm</item>
+        <item>@drawable/tv_planet_earth_1</item>
+        <item>@drawable/tv_planer_earth</item>
+    </string-array>
+
+    <string-array name="data_stars">
+        <item>Dee Bradley Baker, Zach Tyler, Jack De Sena</item>
+        <item>Bryan Cranston, Aaron Paul, Anna Gunn</item>
+        <item>Scott Grimes, Damian Lewis, Ron Livingston</item>
+        <item>David Attenborough, Peter Drost, Roger Munns </item>
+        <item>Jessie Buckley, Jared Harris, Stellan Skarsgård </item>
+        <item>Mamoru Miyano, Brad Swaile, Vincent Tong</item>
+        <item>Emilia Clarke, Peter Dinklage, Kit Harington</item>
+        <item>Makoto Furukawa, Kaito Ishikawa, Hiromichi Tezuka</item>
+        <item>David Attenborough, Sigourney Weaver, Huw Cordey</item>
+        <item>David Attenborough</item>
+
+    </string-array>
+
+    <string-array name="data_creator">
+        <item>Michael Dante DiMartino, Bryan Konietzko</item>
+        <item>Vince Gilligan</item>
+        <item>-</item>
+        <item>-</item>
+        <item>Craig Mazin</item>
+        <item>-</item>
+        <item>David Benioff, D.B. Weiss</item>
+        <item>-</item>
+        <item>-</item>
+        <item>-</item>
+    </string-array>
+
+    <string-array name="data_genre_tv">
+        <item>Animation, Action, Adventure</item>
+        <item>Action, Drama, History</item>
+        <item>Documentary</item>
+        <item>Crime, Drama, Thriller</item>
+        <item>Drama, History, Thriller </item>
+        <item>Action, Adventure, Drama </item>
+        <item>Animation, Crime, Drama</item>
+        <item>Animation, Action, Adventure </item>
+        <item>Documentary</item>
+        <item>Documentary</item>
+    </string-array>
+
+    <string-array name="data_playtime_tv">
+        <item>23min</item>
+        <item>9h 54min </item>
+        <item>6h 4min</item>
+        <item>49min </item>
+        <item>5h 30min</item>
+        <item>57min</item>
+        <item>24min </item>
+        <item>24min</item>
+        <item>8h 58min</item>
+        <item>4h 58min </item>
+    </string-array>
+
+    <string-array name="data_v_tv">
+        <item>@drawable/tv_v_avatar</item>
+        <item>@drawable/tv_v_bb</item>
+        <item>@drawable/tv_v_bob</item>
+        <item>@drawable/tv_v_bp2</item>
+        <item>@drawable/tv_v_chernobyl</item>
+        <item>@drawable/tv_v_deathn</item>
+        <item>@drawable/tv_v_got</item>
+        <item>@drawable/tv_v_opm</item>
+        <item>@drawable/tv_v_planet_earth_1</item>
+        <item>@drawable/tv_v_planet_earth</item>
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string-array name="data_rating_tv">
+        <item>9.2</item>
+        <item>9.4</item>
+        <item>9.4</item>
+        <item>9.5</item>
+        <item>9.5</item>
+        <item>9.4</item>
+        <item>9.0</item>
+        <item>8.9</item>
+        <item>9.4</item>
+        <item>9.5</item>
+    </string-array>
+
+
 </resources>
 
